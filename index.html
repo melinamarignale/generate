@@ -1,10 +1,95 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
+<head lang="fr">
     <meta charset="UTF-8">
-    <title></title>
+    <title>Generate!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-
+    <header>
+        <h1>Générateur de mots de passe sécurisés</h1>
+            <h2>Un clic, un mot de passe !</h2>
+    </header>
+    <section id="main">
+        <form action="#" method="post" name="passwordForm" id="passwordForm">
+            <p>
+                <input type="text" name="passwordForm_password" id="passwordForm_password" value="" readonly="">
+                <input type="submit" name="passwordForm_submit" id="passwordForm_submit" value="generate">
+            </p>
+            <div id="criteres">
+                <fieldset>
+                    <p id="select">Sélectionnez les critères de génération de votre mot de passe sécurisé :</p>
+                    <p>
+                        <input type="checkbox" name="passwordForm_uppercase" id="passwordForm_uppercase" class="checkbox">
+                        <label for="passwordForm_uppercase">Avec des lettres <span class="maj">MAJUSCULES</span>
+                        </label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="passwordForm_number" id="passwordForm_number" class="checkbox">
+                        <label for="passwordForm_number">Avec des chiffres</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="passwordForm_special" id="passwordForm_special" class="checkbox">
+                        <label for="passwordForm_special">Avec des caractères spéciaux</label>
+                    </p>
+                    <p>
+                        <label for="passwordForm_caracternumber">Nombre de caractères :
+                            <select name="passwordForm_caracternumber" id="passwordForm_caracternumber">
+                                <optgroup label="Pas recommandé">
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </optgroup>
+                                <optgroup label="Recommandé">
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12" selected="selected">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                </optgroup>
+                            </select>
+                        </label>
+                    </p>
+                </fieldset>
+            </div>
+        </form>
+    </section>
+    <section id="guid">
+        <section id="info">
+            <h3>Sécurisé ?</h3>
+            <p>Oui, le mot de passe vous est parvenu à l'aide de <a href="#">JavaScript</a>, et n'est donc pas présent dans le code source de la page. De plus, il est généré de façon totalement aléatoire en fonction des critères que vous avez cochés.</p>
+            <p>Sachez également qu'aucune donnée personnelle ni trace des mots de passe créés ne sont stockés sur ce site.</p>
+        </section>
+        <section id="tips">
+            <h3>Guide pour un mot de passe sécurisé</h3>
+            <p>Un mot de passe est considéré comme sûr et sécurisé s'il :</p>
+            <ul>
+                <li class="dos">contient au minimum <strong>10</strong> caractères;</li>
+                <li class="dos">contient des <span class="maj">MAJUSCULES</span>;</li>
+                <li class="dos">contient des chiffres;</li>
+                <li class="dos">contient des caractères spéciaux comme <strong>*$%!:;.,?&(-_)=#{[@]}</strong>;</li>
+                <li class="dont">ne ressemble pas à l'un de vos anciens mots de passe;</li>
+                <li class="dont">n'est pas partagé entre plusieurs comptes;</li>
+                <li class="dont">n'est pas divulgué à qui que ce soit;</li>
+                <li class="dont">ne contient ni votre nom, prénom, identifiant, date de naissance;</li>
+                <li class="dont">ne contient ni le nom ni la date de naisse d'un proche;</li>
+                <li class="dont">ne contient pas de noms communs</li>
+                <li class="dont">ne contient pas une suite de caractères provenant de votre clavier comme azerty, qwertyuiop ou 123456789</li>
+            </ul>
+        </section>
+    </section>
+    <footer>
+        <p>Copyright &copy; 2013 Mélina Marignale. Tous droits réservés - Conception graphique par <a href="http://marguerite-nicot.com/">Marguerite Nicot</a>, tout le reste par
+            <a href="http://melinamarignale.is">moi-même</a>.</p>
+    </footer>
+    <script src="main.js"></script>
 </body>
 </html>
