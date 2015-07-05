@@ -1,0 +1,56 @@
+<form action="#" method="post" name="passwordForm" id="passwordForm">
+    <p>
+        <input type="text" name="passwordForm_password" id="passwordForm_password" value="" readonly="">
+        <input type="submit" name="passwordForm_submit" id="passwordForm_submit" value="generate">
+    </p>
+    <div id="criteres">
+        <fieldset>
+            <p id="select">Sélectionnez les critères de génération de votre mot de passe sécurisé :</p>
+            <div id="left">
+                <p>
+                    <input type="checkbox" name="passwordForm_uppercase" id="passwordForm_uppercase" class="checkbox">
+                    <label for="passwordForm_uppercase">Avec des lettres <span id="maj">MAJUSCULES</span>
+                    </label>
+                </p>
+            </div>
+            <div id="center">
+                <p>
+                    <input type="checkbox" name="passwordForm_number" id="passwordForm_number" class="checkbox">
+                    <label for="passwordForm_number">Avec des chiffres</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="passwordForm_special" id="passwordForm_special" class="checkbox">
+                    <label for="passwordForm_special">Avec des caractères spéciaux</label>
+                </p>
+            </div>
+            <div id="right">
+                <p>
+                    <label for="passwordForm_caracternumber">Nombre de caractères :
+                        <select name="passwordForm_caracternumber" id="passwordForm_caracternumber">
+                            <optgroup label="Pas recommandé">
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </optgroup>
+                            <optgroup label="Recommandé">
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12" selected="selected">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                            </optgroup>
+                        </select>
+                    </label>
+                </p>
+            </div>
+        </fieldset>
+    </div>
+</form>
+<script src="generatePW.js"></script>
