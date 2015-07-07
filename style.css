@@ -1,0 +1,22 @@
+@import url("http://fonts.googleapis.com/css?family=Quicksand");
+
+body {
+    font-family: 'Quicksand', Helvetica, serif;
+    font-size: 16px;
+    color: #646566;
+}
+#colorsAnimate {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 100%;
+    background-image:linear-gradient(
+            to right,
+            #2597bc,
+            #2597bc 35%,
+            #fffc00 35%,
+            #fffc00 70%,
+            #48bc25 70%
+    );
+}
